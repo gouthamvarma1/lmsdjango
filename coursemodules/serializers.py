@@ -15,10 +15,10 @@ class ModuleSerializer(serializers.ModelSerializer):
 class CourseSerializer(serializers.ModelSerializer):
     name = serializers.CharField(
         max_length=65, min_length=4)
-    # credit= serializers.IntegerField()
+    credit= serializers.IntegerField()
     class Meta:
         model = Course
-        fields = ['name']
+        fields = ['name' ,'credit']
 
 
     # def validate(self, attrs):
