@@ -7,7 +7,7 @@ class StudentSerializer(serializers.ModelSerializer):
     name = serializers.CharField(max_length=65, min_length=4)
     email = serializers.CharField(max_length=65, min_length=10)
     gender = serializers.CharField(max_length=8, min_length=4)
-    id= serializers.IntegerField()
+    id= serializers.CharField(max_length=100    , min_length=4)
     class Meta:
         model = Students
         fields = ['id' ,'name','email','gender']

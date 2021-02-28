@@ -9,7 +9,7 @@ from .models import Students
 # Create your views here.
 
 
-class ModuleView(GenericAPIView):
+class StudentView(GenericAPIView):
     serializer_class = StudentSerializer
 
     def post(self, request):
