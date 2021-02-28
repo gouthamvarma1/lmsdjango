@@ -21,4 +21,6 @@ urlpatterns = [
     path('api/auth/',include('authentication.urls')),
     path('api/course/', include('coursemodules.urls')),
     path('api/admin/stu/', include('students.urls')),
+    path('api/eval/',include('evaluation_modules.urls')),
+    path('api/addquiz/',include('quiz_module.urls'))
 ]

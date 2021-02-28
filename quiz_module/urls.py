@@ -5,7 +5,7 @@ from . import views
 # from .views import ModuleView
 
 router = routers.DefaultRouter()
-router.register(r'assignment', views.AssignmentViewSet)
+router.register(r'quiz', views.QuizViewSet)
 
 # urlpatterns = [
 #     path('modules', ModuleView.as_view())
