@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User
-from coursemodules.models import Module,Course
+from .models import Module,Course
 
 class ModuleSerializer(serializers.ModelSerializer):
     name = serializers.CharField(
