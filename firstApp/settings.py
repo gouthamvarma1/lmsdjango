@@ -44,7 +44,9 @@ INSTALLED_APPS = [
     'authentication',
     'coursemodules',
     'students',
-    'corsheaders'
+    'corsheaders',
+    'evaluation_modules',
+    'quiz_module'
 ]
 
 MIDDLEWARE = [
