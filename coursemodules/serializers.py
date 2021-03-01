@@ -9,7 +9,7 @@ class ModuleSerializer(serializers.ModelSerializer):
     topics= serializers.CharField(max_length=255)
     class Meta:
         model = Module
-        fields = ['name','description','topics']
+        fields = ['id','name','description','topics']
 
 
 class CourseSerializer(serializers.ModelSerializer):
@@ -18,7 +18,7 @@ class CourseSerializer(serializers.ModelSerializer):
     credit= serializers.IntegerField()
     class Meta:
         model = Course
-        fields = ['name' ,'credit']
+        fields = ['id','name' ,'credit']
 
 
     # def validate(self, attrs):
