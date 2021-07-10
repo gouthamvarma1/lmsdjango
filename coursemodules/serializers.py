@@ -4,21 +4,21 @@ from .models import Module,Course
 
 class ModuleSerializer(serializers.ModelSerializer):
     name = serializers.CharField(
-        max_length=65, min_length=4)
-    description= serializers.CharField(max_length=255, min_length=4),
-    topics= serializers.CharField(max_length=255, min_length=4)
+        max_length=65)
+    description= serializers.CharField(max_length=255),
+    topics= serializers.CharField(max_length=255)
     class Meta:
         model = Module
-        fields = ['name','description','topics']
+        fields = ['id','name','description','topics']
 
 
 class CourseSerializer(serializers.ModelSerializer):
     name = serializers.CharField(
-        max_length=65, min_length=4)
+        max_length=65)
     credit= serializers.IntegerField()
     class Meta:
         model = Course
-        fields = ['name' ,'credit']
+        fields = ['id','name' ,'credit']
 
 
     # def validate(self, attrs):
